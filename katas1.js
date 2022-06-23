@@ -64,20 +64,20 @@ console.log(squareNumbers());
 function countingBackwards() {
   let meuRetorno = [];
   for (let counter = 20; counter >= 1; counter--) {
-    if(counter % 2 == 0){   
-      meuRetorno.push(counter)
-    }
+    meuRetorno.push(counter)
   }
   return meuRetorno;
 }
- console.log(countingBackwards());
+console.log(countingBackwards());
 
 //7.evenNumbersBackwards - Retornar os números pares de 20 até 1. (20, 18, 16, …, 4, 2)
     
 function evenNumbersBackwards() {
   let meuRetorno = [];
-  for (let counter = 20; counter >= 2; counter-= 2){
-    meuRetorno.push(counter)
+  for (let counter = 20; counter >= 1; counter--) {
+    if(counter % 2 == 0){   
+      meuRetorno.push(counter)
+    }
   }
   return meuRetorno;
 }
